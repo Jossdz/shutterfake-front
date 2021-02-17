@@ -34,7 +34,7 @@ function Profile() {
     }
 
     loadData()
-  }, [])
+  }, [user.artist])
 
   const uploadButton = (
     <div>
@@ -58,10 +58,10 @@ function Profile() {
     setLoading(false)
     setUser(user)
   }
-  const capitalize = s => {
-    if (typeof s !== "string") return ""
-    return s.charAt(0).toUpperCase() + s.slice(1)
-  }
+  // const capitalize = s => {
+  //   if (typeof s !== "string") return ""
+  //   return s.charAt(0).toUpperCase() + s.slice(1)
+  // }
 
   return (
     <Row gutter={[16, 16]}>

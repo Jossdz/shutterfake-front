@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { Col, Row, Card, Button, Typography, Skeleton } from "antd"
+import { Col, Row, Card, Typography, Skeleton } from "antd"
 import { getAllResouces } from "../services/resources"
 import { Link } from "react-router-dom"
 const { Title } = Typography
