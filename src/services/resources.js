@@ -1,6 +1,8 @@
 import axios from "axios"
 const baseURL =
-  process.env.NODE_ENV === "production" ? "/coso" : "http://localhost:3001/coso"
+  process.env.NODE_ENV === "production"
+    ? "https://protected-reaches-90985.herokuapp.com/coso"
+    : "http://localhost:3001/coso"
 
 const _axios = axios.create({
   baseURL,

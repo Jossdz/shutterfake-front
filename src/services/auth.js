@@ -2,7 +2,9 @@ import axios from "axios"
 
 // Preparandonos para el futuro... podemos definir una url varieble en funcion al entorno donde se ejecuta nuestro proyecto
 const baseURL =
-  process.env.NODE_ENV === "production" ? "/auth" : "http://localhost:3001/auth"
+  process.env.NODE_ENV === "production"
+    ? "https://protected-reaches-90985.herokuapp.com/auth"
+    : "http://localhost:3001/auth"
 
 const _axios = axios.create({
   baseURL,
